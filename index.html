@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container mx-auto px-4 py-4">
+      <h1 class="text-4xl font-bold text-purple-700">Invoice</h1>
+      <div class="items-center flex flex-wrap">
+        <div class="w-full md:w-4/12 mr-auto">
+          <ul class="list-none mt-6">
+            <li class="py-2">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="text-blueGray-500 mr-3">Invoice#</h4>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500 font-bold">0004</h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="text-blueGray-500 mr-3">Invoice Date</h4>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500 font-bold">June 19,2019</h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="text-blueGray-500 mr-3">Due Date</h4>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500 font-bold">June 28,2019</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+          <h1>Footbar Lab Logo</h1>
+        </div>
+      </div>
+      <div class="items-center flex flex-wrap mt-3">
+        <div class="w-full md:w-5/12 mr-auto bg-blue-100 p-3 rounded-lg">
+          <h3 class="font-bold text-purple-700 text-xl">Billed By</h3>
+          <p class="font-bold">Footbar Lab</p>
+          <address>45, Raguver Dharma Socity Surat, Gujart India - 416000 </address>
+          <p>
+            <b>GSTIN</b> 29abcde45eb
+          </p>
+          <p>
+            <b>PAN</b> abcse12345
+          </p>
+        </div>
+        <div class="w-full md:w-5/12 mr-auto bg-blue-100 p-3 rounded-lg">
+          <h3 class="font-bold text-purple-700 text-xl">Billed To</h3>
+          <p class="font-bold">Footbar Lab</p>
+          <address>45, Raguver Dharma Socity Surat, Gujart India - 416000</address>
+          <p>
+            <b>GSTIN</b> 29abcde45eb
+          </p>
+          <p>
+            <b>PAN</b> abcse12345
+          </p>
+        </div>
+      </div>
+      <div class="relative overflow-x-auto py-3 mt-3">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead class="text-xs uppercase bg-purple-700 dark:bg-gray-700 text-white">
+            <tr>
+              <th scope="col" class="px-6 py-3 font-semibold"> Item #/Item Discription </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> HSN </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> Qty. </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> GST </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> Taxable Amount </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> CGST </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> SGST </th>
+              <th scope="col" class="px-6 py-3 font-semibold"> Amount </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white">1. Web Developent</th>
+              <td class="px-6 py-4 font-bold"> 02 </td>
+              <td class="px-6 py-4 font-bold"> 10 </td>
+              <td class="px-6 py-4 font-bold"> 9% </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 10,000
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 11,800.00
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white">2. Logo Design</th>
+              <td class="px-6 py-4 font-bold"> 02 </td>
+              <td class="px-6 py-4 font-bold"> 10 </td>
+              <td class="px-6 py-4 font-bold"> 9% </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 10,000
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 11,800.00
+              </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <th scope="row" class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white">3. Web Design</th>
+              <td class="px-6 py-4 font-bold"> 02 </td>
+              <td class="px-6 py-4 font-bold"> 10 </td>
+              <td class="px-6 py-4 font-bold"> 9% </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 10,000
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 11,800.00
+              </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <th scope="row" class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white">4. Full Stack Developent</th>
+              <td class="px-6 py-4 font-bold"> 02 </td>
+              <td class="px-6 py-4 font-bold"> 10 </td>
+              <td class="px-6 py-4 font-bold"> 9% </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 10,000
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 900
+              </td>
+              <td class="px-6 py-4 font-bold">
+                <i class="fa fa-inr" aria-hidden="true"></i> 11,800.00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="relative overflow-x-auto py-3">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-4/12 mr-auto">
+            <div>
+              <h3 class="text-purple-700 font-semibold text-2xl py-3 mb-3">Terms and Conditions</h3>
+              <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+              <h3 class="text-purple-700 font-semibold text-2xl py-3 mb-3">Additional Notes</h3>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem aut nobis quod. Veniam voluptatum sint voluptates repellat laudantium cupiditate dicta deleniti quo quos alias excepturi, facilis aliquam, itaque non iste!</p>
+            </div>
+            <div>
+              <p class="capitalize mt-3 text-sm text-gray-500">for any inquey contact us on <b class="text-black">xyz@gmail.com</b> or call us on <b class="text-black">+91000189</b>
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-4/12 mr-auto">
+            <ul class="list-none mt-6">
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-blueGray-500 mr-3 text-lg font-semibold">Sub Total</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 text-lg  font-semibold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>40,000
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-green-700 mr-3 text-lg  font-semibold">Discount(10%)</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-green-700 text-lg font-semibold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>-4000
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-blueGray-500 mr-3 text-lg  font-semibold">Taxable Amount</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 text-lg  font-semibold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>36,000
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-blueGray-500 mr-3 text-lg  font-semibold">CGST</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 text-lg  font-semibold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>3,240
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-blueGray-500 mr-3 text-lg  font-semibold">SGST</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 text-lg  font-semibold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>3,240
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-blueGray-500 mr-3 font-bold text-2xl">Total</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 font-bold text-2xl">
+                      <i class="fa fa-inr" aria-hidden="true"></i>42,480
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+              <li class="py-2">
+                <div>
+                  <div>
+                    <h4 class="text-gray-500 mr-3 capitalize">Invoice total in Word</h4>
+                  </div>
+                  <p class="capitalize  font-semibold text-xl">fourty two thousand four handerd eighty</p>
+                </div>
+              </li>
+            </ul>
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+            <ul class="list-none mt-6">
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-red-400 font-semibold text-lg mr-3">EarlyPay Discount</h4>
+                    <span class="text-gray-400 text-sm">If You are Pay Dec 19,2019|09 PM</span>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 font-bold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>200
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="font-semibold text-2xl mr-3">EarlyPay Amount</h4>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500 text-2xl font-bold">
+                      <i class="fa fa-inr" aria-hidden="true"></i>42,280
+                    </h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
